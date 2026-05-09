@@ -1,17 +1,17 @@
 package rentalapp.controller;
 
 import rentalapp.dao.BarangDAO;
-import rentalapp.dao.impl.BarangDAOImpl;
+import rentalapp.dao.impl.BarangDAOimpl;
 import rentalapp.model.Barang;
 
 import java.util.List;
 
 public class BarangController {
     // Controller memanggil interface DAO, bukan implementasinya secara langsung (Polymorphism)
-    private BarangDAO barangDAO;
+    private final BarangDAO barangDAO;
 
     public BarangController() {
-        this.barangDAO = new BarangDAOImpl();
+        this.barangDAO = new BarangDAOimpl();
     }
 
     // 1. Method untuk menambah data (Dipanggil saat tombol "Simpan" di-klik di GUI)

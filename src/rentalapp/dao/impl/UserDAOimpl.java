@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAOimpl implements UserDAO {
-    private Connection connection;
+    private final Connection connection;
 
     public UserDAOimpl() {
         this.connection = DbConn.getConnection();
@@ -100,5 +100,10 @@ public class UserDAOimpl implements UserDAO {
             e.printStackTrace();
         }
         return listUser;
+    }
+
+    @Override
+    public User login(String idUser, String password) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

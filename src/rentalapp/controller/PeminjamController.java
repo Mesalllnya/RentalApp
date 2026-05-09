@@ -1,7 +1,7 @@
 package rentalapp.controller;
 
 import rentalapp.dao.PeminjamDAO;
-import rentalapp.dao.impl.PeminjamDAOImpl;
+import rentalapp.dao.impl.PeminjamDAOimpl;
 import rentalapp.model.Peminjam;
 
 import java.util.List;
@@ -10,7 +10,7 @@ public class PeminjamController {
     private PeminjamDAO peminjamDAO;
 
     public PeminjamController() {
-        this.peminjamDAO = new PeminjamDAOImpl();
+        this.peminjamDAO = new PeminjamDAOimpl();
     }
 
     public void tambahPeminjam(String idPeminjam, String nama, String kontak, String organisasi) {

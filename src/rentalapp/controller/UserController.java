@@ -1,7 +1,7 @@
 package rentalapp.controller;
 
 import rentalapp.dao.UserDAO;
-import rentalapp.dao.impl.UserDAOImpl;
+import rentalapp.dao.impl.UserDAOimpl;
 import rentalapp.model.User;
 
 import java.util.List;
@@ -10,7 +10,7 @@ public class UserController {
     private UserDAO userDAO;
 
     public UserController() {
-        this.userDAO = new UserDAOImpl();
+        this.userDAO = new UserDAOimpl();
     }
 
     public User prosesLogin(String idUser, String password) {

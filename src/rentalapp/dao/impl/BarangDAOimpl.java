@@ -15,13 +15,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BarangDAOimpl {
 
-    public class BarangDAOImpl implements BarangDAO {
+    public class BarangDAOimpl implements BarangDAO {
 
         private Connection connection;
 
-        public BarangDAOImpl() {
+        public BarangDAOimpl() {
             // Memanggil koneksi dari class DbConn Anda
             this.connection = DbConn.getConnection();
         }
@@ -112,4 +111,4 @@ public class BarangDAOimpl {
             return listBarang;
         }
     }
-}
+

@@ -4,9 +4,7 @@ import rentalapp.config.DbConn;
 import rentalapp.dao.BarangDAO;
 import rentalapp.dao.DetailTransaksiDAO;
 import rentalapp.dao.TransaksiDAO;
-import rentalapp.dao.impl.BarangDAOImpl;
-import rentalapp.dao.impl.DetailTransaksiDAOImpl;
-import rentalapp.dao.impl.TransaksiDAOImpl;
+import rentalapp.dao.impl.*;
 import rentalapp.model.Barang;
 import rentalapp.model.DetailTransaksi;
 import rentalapp.model.Transaksi;
@@ -23,9 +21,9 @@ public class TransaksiController {
     private Connection connection;
 
     public TransaksiController() {
-        this.transaksiDAO = new TransaksiDAOImpl();
-        this.detailTransaksiDAO = new DetailTransaksiDAOImpl();
-        this.barangDAO = new BarangDAOImpl();
+        this.transaksiDAO = new TransaksiDAOimpl();
+        this.detailTransaksiDAO = new DetailTransaksiDAOimpl();
+        this.barangDAO = new BarangDAOimpl();
         this.connection = DbConn.getConnection(); // <-- Menggunakan DbConn
     }
 

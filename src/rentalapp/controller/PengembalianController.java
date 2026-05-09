@@ -5,10 +5,7 @@ import rentalapp.dao.BarangDAO;
 import rentalapp.dao.DetailPengembalianDAO;
 import rentalapp.dao.PengembalianDAO;
 import rentalapp.dao.TransaksiDAO;
-import rentalapp.dao.impl.BarangDAOImpl;
-import rentalapp.dao.impl.DetailPengembalianDAOImpl;
-import rentalapp.dao.impl.PengembalianDAOImpl;
-import rentalapp.dao.impl.TransaksiDAOImpl;
+import rentalapp.dao.impl.*;
 import rentalapp.model.Barang;
 import rentalapp.model.DetailPengembalian;
 import rentalapp.model.Pengembalian;
@@ -31,10 +28,10 @@ public class PengembalianController {
     private static final double TARIF_DENDA_PER_HARI = 10000.0;
 
     public PengembalianController() {
-        this.transaksiDAO = new TransaksiDAOImpl();
-        this.pengembalianDAO = new PengembalianDAOImpl();
-        this.detailPengembalianDAO = new DetailPengembalianDAOImpl();
-        this.barangDAO = new BarangDAOImpl();
+        this.transaksiDAO = new TransaksiDAOimpl();
+        this.pengembalianDAO = new PengembalianDAOimpl();
+        this.detailPengembalianDAO = new DetailPengembalianDAOimpl();
+        this.barangDAO = new BarangDAOimpl();
         this.connection = DbConn.getConnection();
     }
 
