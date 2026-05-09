@@ -13,4 +13,6 @@ public interface UserDAO {
     void delete(String idUser);
     User getById(String idUser);
     List<User> getAll();
+
+    public User login(String idUser, String password);
 }
