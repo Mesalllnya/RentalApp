@@ -39,7 +39,7 @@ public class Peminjam {
         this.kontak = kontak;
     }
 
-    public String getOrhanisasi() {
+    public String getOrganisasi() {
         return organisasi;
     }
 

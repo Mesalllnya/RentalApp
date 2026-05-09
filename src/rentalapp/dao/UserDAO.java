@@ -4,14 +4,13 @@
  */
 package rentalapp.dao;
 
-import rentalapp.model.Barang;
+import rentalapp.model.User;
 import java.util.List;
 
-public interface BarangDAO {
-    void insert(Barang barang);
-    void update(Barang barang);
-    void delete(String idBarang);
-    Barang getById(String  idBarang);
-    List<Barang> getAll();
+public interface UserDAO {
+    void insert(User user);
+    void update(User user);
+    void delete(String idUser);
+    User getById(String idUser);
+    List<User> getAll();
 }
-
